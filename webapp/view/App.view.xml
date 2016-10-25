@@ -1,0 +1,42 @@
+<mvc:View 
+	controllerName="sap.ui.bootcamp.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout">
+	
+	<!--<Input-->
+ <!--     value="{/field/username}"-->
+ <!--     description="Hello {/field/username}"-->
+ <!--     valueLiveUpdate="true"-->
+ <!--     width="100%"-->
+ <!--     id="username" />-->
+      
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="20%">
+		<l:content>
+			<Label text="Username" />
+			<Input
+			value="{/field/username}"
+    		description="Hello {/field/username}"
+    		valueLiveUpdate="true"
+    		width="200%"
+    		id="username" />
+			<!--	type="Text"-->
+			<!--	maxLength= '10'-->
+			<!--	id="username"/>-->
+			<Label text="Password" />
+			<Input
+				type="Text"
+				maxLength= '12'
+				id="password"/>
+			<!--<Button text="Login"-->
+			<!--			press="onLoginPress">-->
+			<!--		<layoutData>-->
+			<!--			<FlexItemData growFactor="5" />-->
+			<!--		</layoutData>-->
+			<Button text="{i18n>loginButtonText}" press="onLoginPress"/>
+			<!--</Button>-->
+		</l:content>
+	</l:VerticalLayout>
+</mvc:View>
